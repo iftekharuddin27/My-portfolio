@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Iftekhar Uddin — Full-Stack Developer & ML Researcher</title>
+<meta name="description" content="Iftekhar Uddin — Computer Science student at East West University. Full-stack developer (Next.js, MERN), automation engineer, and ML researcher specializing in NLP." />
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,700;0,9..144,900;1,9..144,300;1,9..144,500&family=JetBrains+Mono:wght@300;400;500;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<div class="cursor-dot"></div>
+<div class="cursor-ring"></div>
+
+<canvas id="neural-canvas"></canvas>
+<div class="grid-overlay"></div>
+
+<nav id="nav">
+  <a href="#top" class="logo"><img class="logo-mark" src="Logo.png" alt="Iftekhar" /></a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#work">Work</a></li>
+    <li><a href="#journey">Journey</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <span class="theme-icon" aria-hidden="true"></span>
+      </button>
+    </li>
+  </ul>
+  <button class="menu-btn" id="menuBtn" aria-label="Menu">☰</button>
+</nav>
+
+<main id="top">
+
+<section class="hero">
+  <div class="hero-content">
+    <div class="hero-tag">
+      Iftekhar Uddin · Dhaka, Bangladesh
+      <span class="status-pill">available</span>
+    </div>
+    <h1>
+      <span class="line"><span>I build</span></span>
+      <span class="line accent-line"><span>full-stack products</span></span>
+      <span class="line"><span>that ship.</span></span>
+    </h1>
+    <p class="hero-sub">
+      Computer Science student at <strong>East West University</strong> with a foundation in <strong>full-stack web & mobile development</strong>, automation engineering, and applied <strong>machine learning</strong>. I design SaaS platforms, build cross-platform apps with Next.js & the MERN stack, and currently research sarcasm-aware NLP for my capstone thesis.
+    </p>
+    <div class="hero-cta">
+      <a href="#work" class="btn btn-primary">View Projects <span class="arrow">→</span></a>
+      <a href="https://github.com/iftekharuddin27" target="_blank" rel="noopener" class="btn btn-secondary">GitHub <span class="arrow">↗</span></a>
+    </div>
+  </div>
+
+  <div class="hero-side">
+    <div class="portrait-frame">
+      
+      <img class="portrait-photo" src="iftekhar (Trasparent).png" alt="Iftekhar Uddin" />
+   
+    </div>
+    <div class="float-tag float-tag-1"><span class="dot"></span> Next.js · MERN</div>
+    <div class="float-tag float-tag-2"><span class="dot"></span> ML · NLP</div>
+  </div>
+
+  <div class="scroll-hint">scroll</div>
+</section>
+
+<div class="marquee">
+  <div class="marquee-track">
+    <span class="marquee-item">Full-Stack Engineer</span>
+    <span class="marquee-item">Next.js · MERN</span>
+    <span class="marquee-item">Cross-Platform Apps</span>
+    <span class="marquee-item">Automation</span>
+    <span class="marquee-item">NLP Researcher</span>
+    <span class="marquee-item">UI/UX</span>
+    <span class="marquee-item">Full-Stack Engineer</span>
+    <span class="marquee-item">Next.js · MERN</span>
+    <span class="marquee-item">Cross-Platform Apps</span>
+    <span class="marquee-item">Automation</span>
+    <span class="marquee-item">NLP Researcher</span>
+    <span class="marquee-item">UI/UX</span>
+  </div>
+</div>
+
+<section id="about">
+  <div class="section-head reveal">
+    
+    <h2 class="section-title">About <em>me</em></h2>
+    <span class="section-line"></span>
+  </div>
+
+  <div class="about-grid">
+    <div class="about-text reveal">
+      <p>
+        I'm a final-year <strong>Computer Science & Engineering</strong> student at East West University with a major in AI & Machine Learning. My work spans <strong>production-ready SaaS platforms</strong>, cross-platform mobile apps, headless automation agents, and applied NLP research.
+      </p>
+      <div class="about-quote">
+        "Translating intricate business logic into secure, high-performance, user-centric digital products."
+      </div>
+      <p>
+        On the engineering side, I architect with <strong>Next.js, the MERN stack, Supabase</strong>, and PostgreSQL — recent shipped work includes MealStack (real-time inventory + waste analytics), Medico (cross-platform healthcare app), and a WhatsApp automation agent for residential mess management. I'm currently leading the technical architecture of <strong>SkillSwap BD</strong>, a time-banking skill-exchange platform.
+      </p>
+      <p>
+        On the research side, my capstone thesis investigates a <strong>sarcasm-aware framework</strong> for detecting implicit hate speech in Bangla and English — using XLM-RoBERTa with dual-head architectures on several datasets.
+      </p>
+
+      <div class="interests">
+        <p class="interest-title">I am interested in</p>
+        <div class="interest-list">
+          <span class="interest-pill">⚙ Automation</span>
+          <span class="interest-pill">🌐 Web Dev</span>
+          <span class="interest-pill">📷 Photography</span>
+          <span class="interest-pill">⚽ Football</span>
+          <span class="interest-pill">🎴 Anime</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="about-card reveal">
+      
+      <div class="detail-row"><span>name</span><span>Iftekhar Uddin</span></div>
+      <div class="detail-row"><span>role</span><span>Full-Stack Dev · ML</span></div>
+      <div class="detail-row"><span>institution</span><span>East West University</span></div>
+      <div class="detail-row"><span>major</span><span>AI & Machine Learning</span></div>
+      <div class="detail-row"><span>location</span><span>Aftabnagar, Dhaka</span></div>
+      <div class="detail-row"><span>graduating</span><span>2026</span></div>
+      <div class="detail-row"><span>status</span><span style="color: #4ade80;">● Open to opportunities</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="section-head reveal">
+    
+    <h2 class="section-title">Skills <em>& tooling</em></h2>
+    <span class="section-line"></span>
+  </div>
+
+  <div class="skills-grid">
+    <div class="skill-card reveal">
+      <div class="skill-icon">{ }</div>
+      <h3>Languages</h3>
+      <div class="skill-tags">
+        <span class="skill-tag">JavaScript</span>
+        <span class="skill-tag">TypeScript</span>
+        <span class="skill-tag">Python</span>
+        <span class="skill-tag">HTML5</span>
+        <span class="skill-tag">CSS3</span>
+      </div>
+    </div>
+
+    <div class="skill-card reveal">
+      <div class="skill-icon">⚛</div>
+      <h3>Frontend</h3>
+      <div class="skill-tags">
+        <span class="skill-tag">React.js</span>
+        <span class="skill-tag">Next.js</span>
+        <span class="skill-tag">Tailwind CSS</span>
+        <span class="skill-tag">shadcn/ui</span>
+        <span class="skill-tag">TanStack Query</span>
+      </div>
+    </div>
+
+    <div class="skill-card reveal">
+      <div class="skill-icon">⚙</div>
+      <h3>Backend & APIs</h3>
+      <div class="skill-tags">
+        <span class="skill-tag">Node.js</span>
+        <span class="skill-tag">Express.js</span>
+        <span class="skill-tag">FastAPI</span>
+        <span class="skill-tag">Supabase</span>
+        <span class="skill-tag">REST APIs</span>
+      </div>
+    </div>
+
+    <div class="skill-card reveal">
+      <div class="skill-icon">⛁</div>
+      <h3>Databases</h3>
+      <div class="skill-tags">
+        <span class="skill-tag">PostgreSQL</span>
+        <span class="skill-tag">MongoDB</span>
+        <span class="skill-tag">Firestore</span>
+        <span class="skill-tag">RLS Policies</span>
+      </div>
+    </div>
+
+    <div class="skill-card reveal">
+      <div class="skill-icon">∇θ</div>
+      <h3>ML & AI</h3>
+      <div class="skill-tags">
+        <span class="skill-tag">PyTorch</span>
+        <span class="skill-tag">Hugging Face</span>
+        <span class="skill-tag">XLM-RoBERTa</span>
+        <span class="skill-tag">Pandas</span>
+        <span class="skill-tag">Scikit-Learn</span>
+      </div>
+    </div>
+
+    <div class="skill-card reveal">
+      <div class="skill-icon">⌥</div>
+      <h3>DevOps & Tools</h3>
+      <div class="skill-tags">
+        <span class="skill-tag">Git · GitHub</span>
+        <span class="skill-tag">Vercel</span>
+        <span class="skill-tag">VS Code</span>
+        <span class="skill-tag">Kaggle</span>
+        <span class="skill-tag">Google Colab</span>
+      </div>
+    </div>
+
+    <div class="skill-card reveal">
+      <div class="skill-icon">✦</div>
+      <h3>Design & UX</h3>
+      <div class="skill-tags">
+        <span class="skill-tag">Figma</span>
+        <span class="skill-tag">UI/UX Prototyping</span>
+        <span class="skill-tag">Photoshop</span>
+        <span class="skill-tag">Canva</span>
+        <span class="skill-tag">Capcut</span>
+      </div>
+    </div>
+
+    <div class="skill-card reveal">
+      <div class="skill-icon">▤</div>
+      <h3>Other</h3>
+      <div class="skill-tags">
+        <span class="skill-tag">AutoCAD 2D/3D</span>
+        <span class="skill-tag">System Architecture</span>
+        <span class="skill-tag">Microsoft 365</span>
+        <span class="skill-tag">Capacitor (cross platform tool)</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="work" class="projects">
+  <div class="section-head reveal">
+
+    <h2 class="section-title">Selected <em>work</em></h2>
+    <span class="section-line"></span>
+  </div>
+
+  <div class="project-filters reveal">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="fullstack">Full-Stack</button>
+    <button class="filter-btn" data-filter="automation">Automation</button>
+    <button class="filter-btn" data-filter="mobile">Mobile</button>
+    <button class="filter-btn" data-filter="ml">ML / Research</button>
+  </div>
+
+  <div class="projects-grid">
+
+    <article class="project-card reveal" data-cat="fullstack">
+      <div class="project-visual">
+        <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="g_swap" x1="0" x2="1">
+              <stop offset="0%" stop-color="#7dd3fc"/>
+              <stop offset="100%" stop-color="#c084fc"/>
+            </linearGradient>
+          </defs>
+          <rect width="400" height="200" fill="#0a0e14"/>
+          <g stroke="url(#g_swap)" stroke-width="1.5" fill="none" opacity="0.85">
+            <circle cx="120" cy="100" r="44"/>
+            <circle cx="280" cy="100" r="44"/>
+            <path d="M 164 90 Q 200 60, 236 90" stroke-dasharray="4 3"/>
+            <path d="M 236 110 Q 200 140, 164 110" stroke-dasharray="4 3"/>
+            <polygon points="232,86 240,90 232,94" fill="url(#g_swap)" stroke="none"/>
+            <polygon points="168,114 160,110 168,106" fill="url(#g_swap)" stroke="none"/>
+          </g>
+          <text x="105" y="106" fill="#7dd3fc" font-family="JetBrains Mono" font-size="14" font-weight="700">SKILL</text>
+          <text x="265" y="106" fill="#c084fc" font-family="JetBrains Mono" font-size="14" font-weight="700">TIME</text>
+          <text x="20" y="185" fill="#7dd3fc" font-family="JetBrains Mono" font-size="11">time-banking · MERN stack</text>
+        </svg>
+      </div>
+      <div class="project-body">
+        <div class="project-meta">
+          <span class="project-cat">SaaS · Active</span>
+          <span>2026 →</span>
+        </div>
+        <h3>SkillSwap BD</h3>
+        <p>Founder & Lead Developer of a localized time-banking platform enabling cashless skill sharing across communities. Architected the MERN-stack core, revenue model, and Work Breakdown Structure.</p>
+        <div class="project-tech">
+          <span class="tech-tag">MERN</span>
+          <span class="tech-tag">Figma</span>
+          <span class="tech-tag">System Design</span>
+        </div>
+        <a href="https://github.com/iftekharuddin27" target="_blank" rel="noopener" class="project-link">view repo →</a>
+      </div>
+    </article>
+
+    <article class="project-card reveal" data-cat="fullstack">
+      <div class="project-visual">
+        <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+          <rect width="400" height="200" fill="#0a0e14"/>
+          <g stroke="#7dd3fc" stroke-width="1.5" fill="none">
+            <rect x="40" y="40" width="100" height="120" rx="8"/>
+            <line x1="60" y1="70" x2="120" y2="70" stroke-width="2"/>
+            <line x1="60" y1="90" x2="105" y2="90"/>
+            <line x1="60" y1="110" x2="115" y2="110"/>
+            <line x1="60" y1="130" x2="100" y2="130"/>
+          </g>
+          <g fill="#c084fc">
+            <rect x="180" y="60" width="40" height="80" opacity="0.8"/>
+            <rect x="230" y="80" width="40" height="60" opacity="0.6"/>
+            <rect x="280" y="100" width="40" height="40" opacity="0.4"/>
+          </g>
+          <text x="190" y="55" fill="#c084fc" font-family="JetBrains Mono" font-size="9">SAVINGS</text>
+          <line x1="170" y1="150" x2="340" y2="150" stroke="#1f2937"/>
+          <text x="20" y="185" fill="#7dd3fc" font-family="JetBrains Mono" font-size="11">supabase · waste analytics</text>
+        </svg>
+      </div>
+      <div class="project-body">
+        <div class="project-meta">
+          <span class="project-cat">Full-Stack</span>
+          <span>2025</span>
+        </div>
+        <h3>MealStack</h3>
+        <p>Production-ready Next.js app for inventory management with real-time updates. Engineered a subset-matching algorithm and PostgreSQL triggers for unit normalization, plus an analytics dashboard for waste tracking.</p>
+        <div class="project-tech">
+          <span class="tech-tag">Next.js</span>
+          <span class="tech-tag">Supabase</span>
+          <span class="tech-tag">TanStack Query</span>
+          <span class="tech-tag">Recharts</span>
+        </div>
+        <a href="https://github.com/iftekharuddin27" target="_blank" rel="noopener" class="project-link">view repo →</a>
+      </div>
+    </article>
+
+    <article class="project-card reveal" data-cat="mobile">
+      <div class="project-visual">
+        <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+          <rect width="400" height="200" fill="#0a0e14"/>
+          <g stroke="#fb7185" stroke-width="2" fill="none">
+            <rect x="160" y="30" width="80" height="140" rx="12"/>
+            <line x1="180" y1="50" x2="220" y2="50"/>
+            <circle cx="200" cy="160" r="3" fill="#fb7185"/>
+          </g>
+          <g fill="#fb7185" opacity="0.9">
+            <rect x="170" y="65" width="60" height="14" rx="3"/>
+          </g>
+          <g>
+            <path d="M 196 95 L 196 115 M 188 105 L 204 105" stroke="#7dd3fc" stroke-width="3"/>
+          </g>
+          <g stroke="#c084fc" stroke-width="1" fill="none">
+            <rect x="170" y="125" width="60" height="10" rx="2"/>
+            <rect x="170" y="140" width="60" height="10" rx="2"/>
+          </g>
+          <text x="20" y="185" fill="#fb7185" font-family="JetBrains Mono" font-size="11">healthcare · capacitor</text>
+        </svg>
+      </div>
+      <div class="project-body">
+        <div class="project-meta">
+          <span class="project-cat">Mobile</span>
+          <span>2025</span>
+        </div>
+        <h3>Medico</h3>
+        <p>Cross-platform healthcare app with native Android deployment. Manages patient profiles, doctor appointments, and an integrated e-commerce flow for medicine delivery — backed by Firebase Auth and Firestore.</p>
+        <div class="project-tech">
+          <span class="tech-tag">React</span>
+          <span class="tech-tag">TypeScript</span>
+          <span class="tech-tag">Capacitor</span>
+          <span class="tech-tag">Firebase</span>
+          <span class="tech-tag">shadcn/ui</span>
+        </div>
+        <a href="https://github.com/iftekharuddin27" target="_blank" rel="noopener" class="project-link">view repo →</a>
+      </div>
+    </article>
+
+    <article class="project-card reveal" data-cat="automation">
+      <div class="project-visual">
+        <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+          <rect width="400" height="200" fill="#0a0e14"/>
+          <g stroke="#7dd3fc" stroke-width="1.5" fill="none">
+            <circle cx="80" cy="100" r="28"/>
+            <circle cx="200" cy="100" r="28"/>
+            <circle cx="320" cy="100" r="28"/>
+            <line x1="108" y1="100" x2="172" y2="100" stroke-dasharray="3 3"/>
+            <line x1="228" y1="100" x2="292" y2="100" stroke-dasharray="3 3"/>
+          </g>
+          <text x="63" y="106" fill="#7dd3fc" font-family="JetBrains Mono" font-size="11">WA</text>
+          <text x="180" y="106" fill="#c084fc" font-family="JetBrains Mono" font-size="11">BOT</text>
+          <text x="296" y="106" fill="#fb7185" font-family="JetBrains Mono" font-size="11">SHEETS</text>
+          <text x="170" y="48" fill="#c084fc" font-family="JetBrains Mono" font-size="9">node-cron</text>
+          <text x="20" y="185" fill="#7dd3fc" font-family="JetBrains Mono" font-size="11">whatsapp · 24/7 automation</text>
+        </svg>
+      </div>
+      <div class="project-body">
+        <div class="project-meta">
+          <span class="project-cat">Automation</span>
+          <span>2024</span>
+        </div>
+        <h3>Mess Meal Management Agent</h3>
+        <p>Headless WhatsApp agent (Baileys + Node.js) for real-time meal coordination in a residential mess. Integrates Google Sheets API for cloud-synced ledgers and uses node-cron for daily polls with anti-ban session persistence.</p>
+        <div class="project-tech">
+          <span class="tech-tag">Node.js</span>
+          <span class="tech-tag">Baileys</span>
+          <span class="tech-tag">Google Sheets API</span>
+          <span class="tech-tag">node-cron</span>
+        </div>
+        <a href="https://github.com/iftekharuddin27" target="_blank" rel="noopener" class="project-link">view repo →</a>
+      </div>
+    </article>
+
+    <article class="project-card reveal" data-cat="automation">
+      <div class="project-visual">
+        <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+          <rect width="400" height="200" fill="#0a0e14"/>
+          <g stroke="#c084fc" stroke-width="1.5" fill="none">
+            <rect x="40" y="80" width="60" height="40" rx="6"/>
+            <path d="M 100 100 L 160 100" stroke-dasharray="3 2"/>
+            <circle cx="200" cy="100" r="32"/>
+            <path d="M 232 100 L 280 80" stroke-dasharray="3 2"/>
+            <path d="M 232 100 L 280 100" stroke-dasharray="3 2"/>
+            <path d="M 232 100 L 280 120" stroke-dasharray="3 2"/>
+            <rect x="280" y="60" width="50" height="22" rx="4"/>
+            <rect x="280" y="90" width="50" height="22" rx="4"/>
+            <rect x="280" y="120" width="50" height="22" rx="4"/>
+          </g>
+          <text x="50" y="105" fill="#c084fc" font-family="JetBrains Mono" font-size="11">SCRAPE</text>
+          <text x="186" y="106" fill="#fb7185" font-family="JetBrains Mono" font-size="11">AI</text>
+          <text x="290" y="76" fill="#7dd3fc" font-family="JetBrains Mono" font-size="9">FB</text>
+          <text x="290" y="106" fill="#7dd3fc" font-family="JetBrains Mono" font-size="9">IG</text>
+          <text x="290" y="136" fill="#7dd3fc" font-family="JetBrains Mono" font-size="9">QUEUE</text>
+          <text x="20" y="185" fill="#c084fc" font-family="JetBrains Mono" font-size="11">fastapi · async pipeline</text>
+        </svg>
+      </div>
+      <div class="project-body">
+        <div class="project-meta">
+          <span class="project-cat">AI · Marketing</span>
+          <span>2024</span>
+        </div>
+        <h3>Social Media Automation Agent</h3>
+        <p>AI-driven marketing automation platform (FastAPI + Next.js) that streamlines content from web scraping to multi-platform publishing. Uses Meta Graph API + asyncio for parallel posts and APScheduler for queue management.</p>
+        <div class="project-tech">
+          <span class="tech-tag">FastAPI</span>
+          <span class="tech-tag">Next.js</span>
+          <span class="tech-tag">Meta Graph API</span>
+          <span class="tech-tag">MongoDB</span>
+          <span class="tech-tag">APScheduler</span>
+        </div>
+        <a href="https://github.com/iftekharuddin27" target="_blank" rel="noopener" class="project-link">view repo →</a>
+      </div>
+    </article>
+
+    <article class="project-card reveal" data-cat="ml">
+      <div class="project-visual">
+        <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="g_caps" x1="0" x2="1">
+              <stop offset="0%" stop-color="#7dd3fc"/>
+              <stop offset="100%" stop-color="#fb7185"/>
+            </linearGradient>
+          </defs>
+          <rect width="400" height="200" fill="#0a0e14"/>
+          <g font-family="JetBrains Mono" font-size="13" fill="#7dd3fc">
+            <text x="30" y="55">EN: "oh great, another one"</text>
+            <text x="30" y="80" fill="#c084fc">→ sarcasm: 0.91 · hate: 0.78</text>
+            <text x="30" y="125" fill="#fb7185">BN: "বাহ চমৎকার..."</text>
+            <text x="30" y="150" fill="#c084fc">→ sarcasm: 0.84 · hate: 0.71</text>
+          </g>
+          <line x1="20" y1="95" x2="380" y2="95" stroke="#1f2937" stroke-dasharray="2 2"/>
+          <text x="20" y="185" fill="url(#g_caps)" font-family="JetBrains Mono" font-size="11">XLM-RoBERTa · dual-head</text>
+        </svg>
+      </div>
+      <div class="project-body">
+        <div class="project-meta">
+          <span class="project-cat">Capstone Thesis</span>
+          <span>2025 — 2026</span>
+        </div>
+        <h3>Hate Speech & Sarcasm Detection</h3>
+        <p>NLP research on detecting racist and religiously hateful sarcasm in Bangla and English text. Implementing XLM-RoBERTa with dual-head architectures on BD-SHS and Ben-Sarc datasets. 3-person team under academic supervision.</p>
+        <div class="project-tech">
+          <span class="tech-tag">PyTorch</span>
+          <span class="tech-tag">Hugging Face</span>
+          <span class="tech-tag">XLM-RoBERTa</span>
+          <span class="tech-tag">Multitask Learning</span>
+        </div>
+        <a href="https://github.com/iftekharuddin27" target="_blank" rel="noopener" class="project-link">view repo →</a>
+      </div>
+    </article>
+
+    <article class="project-card reveal" data-cat="fullstack">
+      <div class="project-visual">
+        <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+          <rect width="400" height="200" fill="#0a0e14"/>
+          <g font-family="JetBrains Mono">
+            <rect x="40" y="40" width="100" height="120" rx="6" fill="none" stroke="#7dd3fc" stroke-width="1.5"/>
+            <text x="58" y="105" fill="#7dd3fc" font-size="14">P@ssw0rd!</text>
+            <text x="60" y="135" fill="#5a6678" font-size="9">[generate]</text>
+
+            <rect x="155" y="40" width="90" height="120" rx="6" fill="none" stroke="#c084fc" stroke-width="1.5"/>
+            <text x="172" y="80" fill="#c084fc" font-size="22">X O</text>
+            <text x="172" y="110" fill="#c084fc" font-size="22">  X</text>
+            <text x="172" y="140" fill="#c084fc" font-size="22">O</text>
+
+            <rect x="260" y="40" width="100" height="120" rx="6" fill="none" stroke="#fb7185" stroke-width="1.5"/>
+            <text x="272" y="90" fill="#fb7185" font-size="14">USD → BDT</text>
+            <text x="277" y="120" fill="#fb7185" font-size="11">$1 = ৳120</text>
+          </g>
+          <text x="20" y="190" fill="#7dd3fc" font-family="JetBrains Mono" font-size="11">react · vanilla js</text>
+        </svg>
+      </div>
+      <div class="project-body">
+        <div class="project-meta">
+          <span class="project-cat">Mini Projects</span>
+          <span>2024</span>
+        </div>
+        <h3>Interactive Web Tools</h3>
+        <p>Trio of polished interactive tools — secure password generator (React hooks + Tailwind), classic Tic-Tac-Toe (vanilla JS), and a real-time currency converter using exchange APIs.</p>
+        <div class="project-tech">
+          <span class="tech-tag">React</span>
+          <span class="tech-tag">Tailwind</span>
+          <span class="tech-tag">Vanilla JS</span>
+        </div>
+        <a href="https://github.com/iftekharuddin27" target="_blank" rel="noopener" class="project-link">view repo →</a>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<section id="journey">
+  <div class="section-head reveal">
+
+    <h2 class="section-title">The <em>journey</em></h2>
+    <span class="section-line"></span>
+  </div>
+
+  <div class="timeline">
+    <div class="timeline-item reveal">
+      <div class="timeline-date">Jan 2026 — Present</div>
+      <h3>Technical Project Lead</h3>
+      <h4>SkillSwap BD · Academic</h4>
+      <p>Spearheading technical development and system architecture of a MERN-stack skill-exchange platform with a unique time-banking credit system. Collaborating with a cross-functional team to design the revenue model and translate Figma prototypes into functional frontend components.</p>
+    </div>
+
+    <div class="timeline-item reveal">
+      <div class="timeline-date">2023 — Present</div>
+      <h3>Full-Stack Cross-Platform Apps Developer</h3>
+      <h4>Personal · Independent</h4>
+      <p>Independently engineering and deploying multiple cross-platform applications — from responsive UI design to scalable backend architecture and secure database management using modern JavaScript frameworks.</p>
+    </div>
+
+    <div class="timeline-item reveal">
+      <div class="timeline-date">2023 — 2025</div>
+      <h3>Freelance Digital Marketer</h3>
+      <h4>Fiverr</h4>
+      <p>Managed a specialized digital marketing niche, executing targeted campaigns to enhance online presence and client reach across multiple verticals.</p>
+    </div>
+
+    <div class="timeline-item reveal">
+      <div class="timeline-date">2022 — 2026</div>
+      <h3>BSc · Computer Science & Engineering</h3>
+      <h4>East West University · Major in AI & Machine Learning</h4>
+      <p>Coursework spanning algorithms, full-stack development, ML, and big data. Active in EWU Programming Club and Photography Club, with photos selected for exhibition contests.</p>
+    </div>
+
+    <div class="timeline-item reveal">
+      <div class="timeline-date">2019 — 2021</div>
+      <h3>Higher Secondary Certificate</h3>
+      <h4>Hathazari Government College · Chittagong</h4>
+      <p>Completed HSC with focus on science and mathematics — building the foundation for a career in computer science.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="section-head reveal">
+
+    <h2 class="section-title">Get in <em>touch</em></h2>
+    <span class="section-line"></span>
+  </div>
+
+  <div class="contact-wrap">
+    <div class="contact-info reveal">
+      <h3 class="contact-headline">Have a project or <em>idea</em> in mind? Let's build it.</h3>
+      <p>Open to full-time roles, freelance work, and ML research collaborations — particularly anything involving Next.js, MERN, automation, or applied NLP.</p>
+      <div class="contact-channels">
+        <a href="mailto:uddiniftekhar84@gmail.com" class="channel">
+          <div class="channel-icon">@</div>
+          <div>
+            <span class="channel-label">Email</span>
+            uddiniftekhar84@gmail.com
+          </div>
+        </a>
+        <a href="tel:+8801850989246" class="channel">
+          <div class="channel-icon">☏</div>
+          <div>
+            <span class="channel-label">Phone</span>
+            +880 1850 989246
+          </div>
+        </a>
+        <a href="https://github.com/iftekharuddin27" target="_blank" rel="noopener" class="channel">
+          <div class="channel-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" role="img" aria-label="GitHub">
+              <path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.69c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.36 1.08 2.93.82.09-.65.35-1.08.64-1.33-2.22-.25-4.56-1.11-4.56-4.95 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.9-1.29 2.74-1.02 2.74-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.85-2.34 4.7-4.57 4.95.36.31.68.92.68 1.85v2.74c0 .26.18.58.69.48A10 10 0 0 0 12 2z"/>
+            </svg>
+          </div>
+          <div>
+            <span class="channel-label">GitHub</span>
+            iftekharuddin27
+          </div>
+        </a>
+        <a href="https://linkedin.com/in/kmiftekharuddin" target="_blank" rel="noopener" class="channel">
+          <div class="channel-icon">in</div>
+          <div>
+            <span class="channel-label">LinkedIn</span>
+            /kmiftekharuddin
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <form class="contact-form reveal" id="contactForm" novalidate>
+      <div class="form-group">
+        <label for="name">your name</label>
+        <input type="text" id="name" name="name" required />
+        <span class="form-error" data-for="name">Please enter your name</span>
+      </div>
+      <div class="form-group">
+        <label for="email">your email</label>
+        <input type="email" id="email" name="email" required />
+        <span class="form-error" data-for="email">Please enter a valid email</span>
+      </div>
+      <div class="form-group">
+        <label for="subject">subject</label>
+        <input type="text" id="subject" name="subject" />
+      </div>
+      <div class="form-group">
+        <label for="message">message</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        <span class="form-error" data-for="message">Please write a message</span>
+      </div>
+      <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">
+        Send message <span class="arrow">→</span>
+      </button>
+      <div id="form-status"></div>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="footer-top">
+    <a href="#top" class="logo"><img class="logo-mark" src="Logo.png" alt="Iftekhar" /></a>
+    <a href="#top" class="back-top">↑ back to top</a>
+  </div>
+  <div class="footer-meta">
+    <span>© 2026 Iftekhar Uddin</span>
+    <span id="liveTime">--:--:-- BDT</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
